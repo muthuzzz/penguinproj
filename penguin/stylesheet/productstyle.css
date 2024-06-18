@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+/*product style*/
+/*SUNSCREEN*/
+.box {
+    border-color: orange;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    height: 340px;
+    padding: 1%;
+    margin-top: 2%;
+    margin: 2px;
+    border-radius: 5%;
+    transition: 1s;
+    background-color: white;
+}
+
+/*FACE WASH*/
+.box1 {
+    border-color: rgb(218, 101, 17);
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    height: 350px;
+    padding: 1%;
+    margin-top: 2%;
+    margin: 2px;
+    border-radius: 5%;
+    transition: 1s;
+    background-color: white;
+}
+
+
+/*MAKEUP PRODUCTS*/
+.box2 {
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    height: 350px;
+    padding: 1%;
+    margin-top: 2%;
+    margin: 2px;
+    border-radius: 5%;
+    margin-bottom: 1%;
+    transition: 1s;
+    background-color: white;
+}
+
+/*css animation for products */
+.box img {
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+
+}
+
+.box:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    background-color: orange;
+}
+
+.box1:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    background-color: rgb(218, 101, 17);
+}
+
+.box2:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    background-color: darkcyan;
+}
+
+/*HEADER STYLE*/
+.header {
+    font-family: 'Dancing Script';
+    color: hotpink;
+    fonT-size: 100px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+/*LIST STYLE*/
+.one {
+    text-decoration: none;
+    -webkit-text-stroke-color: rgb(218, 6, 119);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.02em;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+    background-image: linear-gradient(135deg, deeppink 0%, deeppink 50%, transparent 50.1%);
+    -webkit-background-size: 0% 100%;
+    background-size: 0% 100%;
+    text-transform: capitalize;
+    margin: 0 10px;
+}
+
+.one:hover {
+    -webkit-background-size: 220% 100%;
+    background-size: 220% 100%;
+}
+
+/*searchbar*/
+.searchbar {
+    padding: 4%;
+    text-align: center;
+}
+
+input {
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(250, 183, 250);
+    cursor: pointer;
+}
+
+/*LIST DISPLAY*/
+li {
+    cursor: pointer;
+}
+
+ul,
+li {
+    display: inline;
+    color: black;
+
+}
+
+ul {
+    font-size: x-large;
+
+}
+
+ul {
+    margin-left: 30%;
+}
+
+/*mail icon style*/
+.button2 {
+
+    color: white;
+    color: black;
+}
+
+.button2:hover {
+    background-color: pink;
+}
+
+/*style for social media icons*/
+footer .fa-brands {
+    color: white;
+background-color:#3586ff;
+    padding: 2%;
+    font-size: 40px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+footer {
+    display: block;
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+background-color:#3586ff;
+}
+.fa-regular
+{
+    color: white;
+    background-color:#3586ff;
+        padding: 2%;
+        font-size: 40px;
+        border-radius: 50%;
+        transition: 0.2s;
+    }   
+footer .fa-brands:hover,.fa-regular:hover {
+    transform: translateY(-12px);
+}
+
+footer .menu {
+    font-size: 1.1em;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    margin-left: 3%;
+}
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(d:/penguin/pics/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15PX;
+    animation: animatewave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 4s linear infinite;
+}
+
+@keyframes animatewave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animatewave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+.prodname a
+{
+text-decoration: none;
+display:inline-flex;
+justify-content: center;
+color: darkorchid;
+font-size: larger;
+margin-top: 2%;
+margin-bottom: 3%;
+}
+.prodhead
+{
+display: flex;
+justify-content: center;
+font-size:40px;
+color:#34231dcc;
+}
+.prodname a:hover
+{
+    color:black
+}

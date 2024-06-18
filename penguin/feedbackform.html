@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin.com feedbackform</title>
+    <link rel="icon" href="d:\penguin\pics\penicon.jpg">
+    <link rel="stylesheet" href="d:/penguin/stylesheet/feedbackstyle.css">
+</head>
+<body>
+    <form>
+        <h1>Feedback</h1>
+        <input type="text" placeholder="Name"required>
+        <input type="email" placeholder="Email"required>
+        <input placeholder="Phone No"type="text-number" minlength="10" maxlength="10"required>
+        <label>Enter Your Feedback</label>
+        <textarea style="width: 292px;height:1cm;"></textarea>
+        <input type="submit" class="button" onclick="openpopup()">
+    </form>
+    <div class="popup" id="popup">
+        <h2>Thank You!</h2>
+        <p>your details has been successfully sumbited. Thanks!</p>
+        <button type="button" onclick="closepopup()">ok</button>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup()
+        {
+            popup.classList.add("open-popup");
+        }
+        function closepopup()
+        {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

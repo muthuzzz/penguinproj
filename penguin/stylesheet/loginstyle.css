@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: 0;
+    cursor:pointer;
+}
+body{
+    height:100vh;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;   
+ background-image:url('d:/penguin/pics/aa1.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+form
+{
+width: 25rem;
+height: 30rem;
+display: flex;
+flex-direction: column;
+background-color:rgb(255, 182, 193,0.8);
+box-shadow: 0 8px 32px 0 rgba(31,38,135,.40);
+border-radius:30px;
+border-left: 1px solid rgba(0,0,0,.3);
+border-top: 1px solid rgba(0,0,0,.3) ;
+}
+h1
+{
+font-size: 50px;
+text-align: center;
+color:black;
+text-shadow: 3px 5px 3px rgba(255,255,255,.3);
+letter-spacing: 2px;
+margin-bottom: 5%;
+opacity: .9;
+}
+label
+{
+font-size: 20px;
+color:black;
+margin-left: 10%;
+opacity: 0.9;
+text-shadow: 3px 5px 3px rgba(255,255,255,.3);
+}
+input
+{
+width: 80%;
+margin: 5% auto;
+margin-bottom: 8%;
+border: none;
+outline: none;
+background: transparent;
+color: black;
+font-size: larger;
+border-bottom:1px solid rgba(0,0,0,0.6);
+
+}
+.button
+{
+width: 50%;
+margin: 3% auto;
+color:black;
+font-size: 15px;
+opacity: .9;
+background:rgba(0,0,0,0.06);
+padding:1px;
+border: none;
+outline: none;
+border-radius: 20px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.04);
+box-shadow:3px 3px 5px rgba(0,0,0,0.06);
+border-right: 1px solid rgba(0,0,0,.8);
+border-bottom: 1px solid rgba(0,0,0,.8);
+}
+a
+{
+    text-decoration:none;
+font-size: 20px;
+text-align: center;
+color: black;
+opacity: .8;
+}
